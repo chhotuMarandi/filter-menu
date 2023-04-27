@@ -1,0 +1,35 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+.menu-section {
+ height: 10vh;
+ width: 100%;
+ /* background-color: red; */
+ margin-top: 5rem;
+ display: flex;
+ justify-content: center;
+ 
+}
+
+.header-section {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+
+.header-section h1 {
+ font-size: 3rem;
+}
+
+.underline {
+ background-color: #FA6E0F;
+ /* padding: 5px; */
+width: 4rem;
+height: 5px;
+border-radius: 10px;
+margin-top: 5px;
+}
