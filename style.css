@@ -4,10 +4,11 @@
  padding: 0;
 }
 
+/* Menu Section */
+
 .menu-section {
  height: 10vh;
  width: 100%;
- /* background-color: red; */
  margin-top: 5rem;
  display: flex;
  justify-content: center;
@@ -27,9 +28,37 @@
 
 .underline {
  background-color: #FA6E0F;
- /* padding: 5px; */
 width: 4rem;
 height: 5px;
 border-radius: 10px;
 margin-top: 5px;
 }
+
+/* Item Section  */
+
+.menu-items {
+ display: flex;
+ justify-content: center;
+}
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 20px;
+}
+
+.item {
+ background-color: green;
+ height: 300px;
+ width: 700px;
+ display: flex;
+}
+
+.image {
+ width: 100%;
+ background-color: yellow;
+ border: 5px solid darksalmon;
+ border-radius: 5px;
+}
+
+
