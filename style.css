@@ -29,10 +29,18 @@
  padding: 10px  20px;
  font-size: 1.2rem;
  font-weight: 600;
- border-radius: 10px;
+ border-radius: 8px;
  border: 2px solid #FA6E0F;
  color: #FA6E0F;
  outline: none;
+ background: none;
+}
+
+.buttons button:hover {
+background-color: #FA6E0F;
+color: #fff;
+cursor: pointer;
+transition: 0.3s all linear;
 }
 
 .header-section {
