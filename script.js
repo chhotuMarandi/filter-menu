@@ -9,8 +9,8 @@ const menu = [
   },
   {
     id: 2,
-    img: "https://images.pexels.com/photos/2067405/pexels-photo-2067405.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    title: "Chicken Butter Masala",
+    img: "https://images.pexels.com/photos/342020/pexels-photo-342020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Plate of Pastries",
     category: "breakfast",
     price: "$8.99",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit",
@@ -25,8 +25,8 @@ const menu = [
   },
   {
     id: 4,
-    img: "https://images.pexels.com/photos/2732666/pexels-photo-2732666.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    title: "Paneer Butter Masala",
+    img: "https://images.pexels.com/photos/8029751/pexels-photo-8029751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: " Raspberry Fruits",
     category: "lunch",
     price: "$55.99",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit",
@@ -36,10 +36,11 @@ const menu = [
 const menuItem = document.querySelector(".menu-items");
 const grid = document.querySelector(".grid");
 
-window.addEventListener("DOMContentLoaded", () => {
- let mappedItems = menu.map((item) => {
-  // console.log(item);
-  return `<article class="item">
+window.addEventListener("DOMContentLoaded", displayItems(menu));
+
+function displayItems (menuItems) {
+ let mappedItems = menuItems.map((item) => {
+   return `<article class="item">
     <div class="image">
      <img src="${item.img}" alt="${item.title}">
     </div>
@@ -57,7 +58,6 @@ window.addEventListener("DOMContentLoaded", () => {
     </div>
    </article>`;
  });
- mappedItems = mappedItems.join("")
+ mappedItems = mappedItems.join("");
  grid.innerHTML = mappedItems;
- console.log(mappedItems)
-})
+}

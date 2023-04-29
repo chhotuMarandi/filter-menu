@@ -12,7 +12,27 @@
  margin-top: 5rem;
  display: flex;
  justify-content: center;
+ flex-direction: column;
  
+}
+
+.buttons {
+ display: flex;
+ justify-content: center;
+ gap: 3rem;
+ /* background-color: red; */
+ width: 100%;
+ margin-top: 20px;
+}
+
+.buttons button {
+ padding: 10px  20px;
+ font-size: 1.2rem;
+ font-weight: 600;
+ border-radius: 10px;
+ border: 2px solid #FA6E0F;
+ color: #FA6E0F;
+ outline: none;
 }
 
 .header-section {
@@ -39,6 +59,7 @@ margin-top: 5px;
 .menu-items {
  display: flex;
  justify-content: center;
+ margin-top: 2.5rem;
 }
 
 .grid {
