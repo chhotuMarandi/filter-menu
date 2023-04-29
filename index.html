@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>filter menu</title>
- <link rel="stylesheet" href="style.css">
- <script src="script.js" defer></script>
-</head>
-<body>
- <!-- menu and buttons section -->
- <section class="menu-section">
-  <div class="header-section">
-   <h1>Our Menu</h1>
-   <div class="underline"></div>
-  </div>
-  <div class="buttons">
-    <button type="button" class="filter-btn">All</button>
-    <button type="button" class="filter-btn">Breakfast</button>
-    <button type="button" class="filter-btn">Lunch</button>
-    <button type="button" class="filter-btn">Dinner</button>
-  </div>
-  
- </section>
 
- <!-- menu items -->
- <section class="menu-items">
-  <div class="grid">
-   <article class="item">
-    <div class="image">
-     <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filter menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- menu and buttons section -->
+  <section class="menu-section">
+    <div class="header-section">
+      <h1>Our Menu</h1>
+      <div class="underline"></div>
     </div>
-    <div class="item-details">
-     <div class="title">
-      <h4>Chiken Butter Masala</h4>
-      <div class="price">
-       <h5>$45.98</h5>
-      </div>
-     </div>
-     <div class="item-underline"></div>
-     <div class="item-description">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit</p>
-     </div>
+    <div class="buttons">
+      <button type="button" class="filter-btn" 
+      data-id="all">All</button>
+      <button type="button" class="filter-btn" data-id="breakfast">Breakfast</button>
+      <button type="button" class="filter-btn" data-id="lunch">Lunch</button>
+      <button type="button" class="filter-btn" data-id="dinner">Dinner</button>
     </div>
-   </article>
-  </div>
- </section>
+
+  </section>
+
+  <!-- menu items -->
+  <section class="menu-items">
+    <div class="grid">
+      <article class="item">
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="">
+        </div>
+        <div class="item-details">
+          <div class="title">
+            <h4>Chiken Butter Masala</h4>
+            <div class="price">
+              <h5>$45.98</h5>
+            </div>
+          </div>
+          <div class="item-underline"></div>
+          <div class="item-description">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint
+              accusantium nulla harum vitae sit</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
 </body>
+
 </html>

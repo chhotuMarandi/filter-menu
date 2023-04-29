@@ -19,7 +19,7 @@ const menu = [
     id: 3,
     img: "https://images.pexels.com/photos/2205270/pexels-photo-2205270.jpeg",
     title: "Baked Bread",
-    category: "dinner~",
+    category: "dinner",
     price: "$2.99",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit",
   },
@@ -35,12 +35,15 @@ const menu = [
 
 const menuItem = document.querySelector(".menu-items");
 const grid = document.querySelector(".grid");
+const buttons = document.querySelectorAll(".filter-btn");
 
 window.addEventListener("DOMContentLoaded", displayItems(menu));
 
-function displayItems (menuItems) {
- let mappedItems = menuItems.map((item) => {
-   return `<article class="item">
+// menu items load
+
+function displayItems(menuItems) {
+  let mappedItems = menuItems.map((item) => {
+    return `<article class="item">
     <div class="image">
      <img src="${item.img}" alt="${item.title}">
     </div>
@@ -57,7 +60,21 @@ function displayItems (menuItems) {
      </div>
     </div>
    </article>`;
- });
- mappedItems = mappedItems.join("");
- grid.innerHTML = mappedItems;
+  });
+  mappedItems = mappedItems.join("");
+  grid.innerHTML = mappedItems;
 }
+
+// filter buttons
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const targeBtn = e.currentTarget.dataset.id;
+    // console.log(targeBtn)
+
+    const itemMap = menu.map((item) => {
+      let category = item.category;
+      console.log(category)
+    })
+  });
+});
