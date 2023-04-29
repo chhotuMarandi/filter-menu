@@ -39,6 +39,29 @@ const buttons = document.querySelectorAll(".filter-btn");
 
 window.addEventListener("DOMContentLoaded", displayItems(menu));
 
+
+// filter buttons
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const category = e.currentTarget.dataset.id;
+    // console.log(targeBtn)
+
+  const menuFiltered = menu.filter((filterItems) => {
+    if(filterItems.category === category) {
+    return filterItems;
+    }
+  })
+
+  if(category === 'all') {
+    displayItems(menu);
+  } else {
+    displayItems(menuFiltered);
+  }
+
+  });
+});
+
 // menu items load
 
 function displayItems(menuItems) {
@@ -65,16 +88,4 @@ function displayItems(menuItems) {
   grid.innerHTML = mappedItems;
 }
 
-// filter buttons
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    const targeBtn = e.currentTarget.dataset.id;
-    // console.log(targeBtn)
-
-    const itemMap = menu.map((item) => {
-      let category = item.category;
-      console.log(category)
-    })
-  });
-});
