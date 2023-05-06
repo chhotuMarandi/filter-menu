@@ -133,3 +133,46 @@ margin-top: 5px;
  inline-size: 350px;
  font-size: 1.4rem;
 } 
+
+
+/* Responsive for mobile devices */
+
+/* max 900px screens */
+
+@media (max-width:960px){
+ .grid {
+  grid-template-columns: repeat(1, 1fr);
+ }
+}
+
+/*max 780px screens */
+
+@media (max-width:420px){
+
+ .menu-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+
+ .grid {
+  width: 90vw;
+  grid-gap: 10px;
+ }
+
+ .image {
+  width: 300px;
+  height: 180px;
+  margin-right: 10px;
+ }
+
+
+ .item-description p {
+ font-size: 1rem;
+} 
+
+.title h4 {
+ font-size: 1.2rem;
+}
+
+}
