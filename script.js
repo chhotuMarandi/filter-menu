@@ -31,6 +31,38 @@ const menu = [
     price: "$55.99",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit",
   },
+  {
+    id: 5,
+    img: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: " Raspberry Fruits",
+    category: "lunch",
+    price: "$55.99",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit",
+  },
+  {
+    id: 6,
+    img: "https://images.pexels.com/photos/4958730/pexels-photo-4958730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Roti Mixveg",
+    category: "dinner",
+    price: "$3.99",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit",
+  },
+  {
+    id: 7,
+    img: "https://images.pexels.com/photos/4141026/pexels-photo-4141026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: " Omlette",
+    category: "breakfast",
+    price: "$10.99",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit",
+  },
+  {
+    id: 8,
+    img: "https://images.pexels.com/photos/792027/pexels-photo-792027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Chicken Meat Dish",
+    category: "launch",
+    price: "$15.99",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloremque rem velit beatae atque sint accusantium nulla harum vitae sit",
+  },
 ];
 
 const menuItem = document.querySelector(".menu-items");
